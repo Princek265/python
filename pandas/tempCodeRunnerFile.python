@@ -1,0 +1,4 @@
+import pandas as p
+import numpy as n
+series =p.Series([10,20,30,40,50,"Hello"],index = ["haha","hehe","meowmeownigg","yoyo","lappusachin","chickenlegpiece"])
+print(series.shape) 
