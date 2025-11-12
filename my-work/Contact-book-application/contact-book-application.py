@@ -92,7 +92,9 @@ def main():
         elif user_choice.lower()=="delete":
             # delete_contact()
             return
-        else:
-            continue
+        elif user_choice.lower()=="exit":
+            print("Exiting Contact Book. Goodbye!")
+            break
+            
 main()
 
