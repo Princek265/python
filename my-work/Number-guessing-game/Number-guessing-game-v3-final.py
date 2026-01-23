@@ -622,7 +622,7 @@ def hint(User_guess_input,random_number):
             print("YOUR GUESS IS HIGH")
         else:
             print("YOUR GUESS IS A BIT HIGH")
-        print()
+        # print()
     elif (User_guess_input<random_number):
         if (User_guess_input<(random_number-10)):
             print("YOUR GUESS IS TOO LOW")
@@ -630,7 +630,7 @@ def hint(User_guess_input,random_number):
             print("YOUR GUESS IS LOW")
         else:
             print("YOUR GUESS IS A BIT LOW")
-        print()
+        # print()
 
 #function to update highscore
 def update_highscore(current_score,old_high_score):
@@ -702,7 +702,13 @@ def main(difficulty,high_score):
                     score = 0
                 else:
                     score-=difficulty
+                comment_pack=comment_pack_selector(score,comment_category)
+                comment(comment_pack)
+                print()
                 tell_score(score,high_score)
+                print("**********Try Again!**********")
+                print()
+                print()
                 
         if guess_input != random_number:
             print("You ran out of chances }:-(")
