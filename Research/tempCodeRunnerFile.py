@@ -1,0 +1,5 @@
+print(df.head())
+# print(df.tail())
+# print(df.describe())
+# print(df.info())
+# print(df.columns)
